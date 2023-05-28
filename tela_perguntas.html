@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show do Milhão</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-/Y6pD6pU4a8vI6+OGtoEwGpFdJQ9B8MWvALM2Q6QcYs/RwU8Q1a1TGyoozGksdqr"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"
+    integrity="sha512-jvH9eTzkjKq3+gJW8WevS+bSAmnOUul+M05VLG4FFJv4h4xFsZsYKfBkW8zta/wr6tzmk0COU69kr6aWbfIv+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Yvckj+OnVuNS6LZ+m6UwNR6J2I6rAxr6Uy7V5C5X5orLFG1/IObY2Jqrgw5b1g7V"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url("images/background_perguntas.png");
+      background-size: cover;
+      background-position: sticky;
+      background-repeat: repeat;
+    }
+
+    .card {
+      background-color: rgba(169, 164, 179, 1);
+    }
+
+    .btn-primary {
+      text-align: left;
+      border-radius: 50px;
+      background-color: rgba(21, 122, 140, 1);
+      color: rgba(38, 13, 51, 1);
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 14pt;
+      width: auto;
+      height: auto;
+      margin-top: 25px;
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(38, 13, 51, 1);
+      color: rgba(21, 122, 140, 1);
+    }
+    .navbar{
+      background-color: rgba(0, 0, 0, 0.35);
+    }
+    .btn-outline-secondary{
+      text-align: left;
+      border-radius: 50px;
+      margin-right: 5px;
+      background-color: rgba(21, 122, 140, 1);
+      color: rgba(38, 13, 51, 1);
+      border: 2px solid rgb(10, 70, 100);
+    }
+    .btn-outline-secondary:hover{
+      background-color: rgba(38, 13, 51, 1);
+      color: rgba(21, 122, 140, 1); 
+      border: 2px solid rgb(22, 2, 34);;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand">
+    <img src="images/Show do Milhãobranco.png" width="90" height="30"></a>
+    <form class="form-inline">
+      <button class="btn btn-sm btn-outline-danger" type="button">Sair</button>
+      <button class="btn btn-sm btn-outline-secondary" type="button">Pontuação Atual</button>
+      
+    </form>
+  </nav>
+
+  <div class="card" style="width: 1080px; height: 550px; margin: 50px auto; border-radius: 25px;">
+    <div class="card-body">
+      <!-- conteúdo a partir daqui -->
+      <div class="card" style="width: auto; height: 220px;background-color:rgb(190, 190, 200); border-radius: 15px;">
+        <div class="card-body">
+          <h4>Pergunta 1/7</h4>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dolor vel mauris vehicula, eget interdum
+          mauris blandit. Curabitur semper scelerisque justo sit amet eleifend. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Sed auctor dolor vel mauris vehicula, eget interdum mauris blandit. Curabitur semper
+          scelerisque justo sit amet eleifend.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dolor
+          vel mauris vehicula, eget interdum mauris blandit. Curabitur semper scelerisque justo sit amet eleifend.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor dolor vel mauris vehicula, eget interdum mauris
+          blandit. Curabitur semper scelerisque justo sit amet eleifend.
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: left; align-items: center;">
+        <button type="button" class="btn btn-primary opcaoA" style="border-radius: 25px;">
+          <strong>A</strong>
+        </button>
+        <span style="display: inline-block; margin-left: 10px;margin-top: 20px;">Resposta do item A</span>
+      </div>
+
+      <div style="display: flex; justify-content: left; align-items: center;">
+        <button type="button" class="btn btn-primary opcaoB" style="border-radius: 25px;">
+          <strong>B</strong>
+        </button>
+        <span style="display: inline-block; margin-left: 10px;margin-top: 20px;">Resposta do item B</span>
+      </div>
+
+      <div style="display: flex; justify-content: left; align-items: center;">
+        <button type="button" class="btn btn-primary opcaoC" style="border-radius: 25px;">
+          <strong>C</strong>
+        </button>
+        <span style="display: inline-block; margin-left: 10px; margin-top: 20px;">Resposta do item C</span>
+      </div>
+
+      <div style="display: flex; justify-content: left; align-items: center;">
+        <button type="button" class="btn btn-primary opcaoD" style="border-radius: 25px;">
+          <strong>D</strong>
+        </button>
+        <span style="display: inline-block; margin-left: 10px; margin-top: 20px;">Resposta do item D</span>
+      </div>
+
+</body>
+
+</html>
+
+<!--
+  o botão ainda está um pouco estranho e as respostas não estã numa fonte apropriada, a refazer
+-->

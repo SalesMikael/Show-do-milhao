@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show do Milhão - Tela inicial</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha384-/Y6pD6pU4a8vI6+OGtoEwGpFdJQ9B8MWvALM2Q6QcYs/RwU8Q1a1TGyoozGksdqr"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"
+    integrity="sha512-jvH9eTzkjKq3+gJW8WevS+bSAmnOUul+M05VLG4FFJv4h4xFsZsYKfBkW8zta/wr6tzmk0COU69kr6aWbfIv+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Yvckj+OnVuNS6LZ+m6UwNR6J2I6rAxr6Uy7V5C5X5orLFG1/IObY2Jqrgw5b1g7V"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-image: url("images/background\ -\ rankingmaior.png");
+      background-size: cover;
+      background-position: sticky;
+      background-repeat: repeat;
+    }
+
+    .card {
+      background-color: rgba(169, 164, 179, 1);
+    }
+
+    img#logo {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 70px;
+    }
+
+    .form-control {
+      background-color: rgba(169, 164, 179, 1);
+    }
+
+    input[type=text],
+    .form-control,
+    select.custom-select,
+    textarea {
+      border: 2px solid #4d4d4d;
+      /* Cor da borda */
+      border-radius: 10px;
+      background-color: rgba(169, 164, 179, 1);
+      /* Cor de fundo */
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    input[type=text]:focus,
+    .form-control,
+    textarea:focus {
+      outline: none;
+      border-color: #6c757d;
+      /* Cor da borda ao clicar */
+    }
+
+    #ajudaPergunta {
+      color: rgb(163, 22, 22);
+      /*nao esta funcionando isso aqui por algum motivo*/
+    }
+
+    .btn-primary {
+      text-align: center;
+      border-radius: 15px;
+      background-color: rgba(21, 122, 140, 1);
+      color: rgba(38, 13, 51, 1);
+    }
+
+    .btn-primary:hover {
+      background-color: rgba(38, 13, 51, 1);
+      color: rgba(21, 122, 140, 1);
+    }
+
+    select.custom-select {
+      margin-top: 15pt;
+      border: 2x solid #4d4d4d;
+      background-color: rgba(169, 164, 179, 1);
+    }
+  </style>
+</head>
+
+<body>
+  <img id="logo" src="images/Show do Milhãobranco.png" alt="" width="300" height="90">
+  <div class="card" style="width: 600px; height: 750px; margin: 100px auto; border-radius: 25px;">
+    <div class="card-body">
+      <!-- conteúdo a partir daqui -->
+      <form>
+        <fieldset disabled>
+          <div class="form-group">
+            <label for="disabledTextInput">ID da conta</label>
+            <input type="text" id="disabledTextInput" class="form-control" placeholder="90586941">
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="pergunta">Escreva a sua pergunta aqui</label>
+          <textarea class="form-control" id="pergunta" rows="3" maxlength="255"></textarea>
+          <small id="ajudaPergunta" class="form-text text-muted">
+            A sua pergunta irá para uma avaliação antes de entrar no jogo.
+            <br>Perguntas de conteúdo violento, que façam apologia a movimentos de ódio e afins <strong>NÃO SERÃO
+              ACEITAS</strong> e o usuário pode ter a sua conta <strong>BANIDA</strong>.
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="opcaoA"></label>
+          <input type="text" class="form-control" id="opcaoA" placeholder="Opção A">
+        </div>
+
+        <div class="form-group">
+          <label for="opcaoB"></label>
+          <input type="text" class="form-control" id="opcaoB" placeholder="Opção B">
+        </div>
+
+        <div class="form-group">
+          <label for="opcaoC"></label>
+          <input type="text" class="form-control" id="opcaoC" placeholder="Opção C">
+        </div>
+
+        <div class="form-group">
+          <label for="opcaoD"></label>
+          <input type="text" class="form-control" id="opcaoD" placeholder="Opção D">
+        </div>
+
+        <div class="form-group">
+          <select class="custom-select" required>
+            <option value="">Selecione a opção correta</option>
+            <option value="A">Opção A</option>
+            <option value="B">Opção B</option>
+            <option value="C">Opção C</option>
+            <option value="D">Opção D</option>
+          </select>
+          <div class="invalid-feedback">Selecione a opção correta!</div>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary font-weight-bold">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const opcaoA = document.getElementById('opcaoA');
+    const opcaoB = document.getElementById('opcaoB');
+    const opcaoC = document.getElementById('opcaoC');
+    const opcaoD = document.getElementById('opcaoD');
+    const opcoesSelect = document.getElementById('opcoes-select');
+
+    function atualizarOpcoesSelect() {
+      // Limpar todas as opções existentes
+      while (opcoesSelect.firstChild) {
+        opcoesSelect.removeChild(opcoesSelect.firstChild);
+      }
+
+      // Adicionar uma opção para cada campo de opção com texto
+      if (opcaoA.value.trim() !== '') {
+        const opcao = document.createElement('option');
+        opcao.value = opcaoA.value;
+        opcao.text = opcaoA.value;
+        opcoesSelect.appendChild(opcao);
+      }
+
+      if (opcaoB.value.trim() !== '') {
+        const opcao = document.createElement('option');
+        opcao.value = opcaoB.value;
+        opcao.text = opcaoB.value;
+        opcoesSelect.appendChild(opcao);
+      }
+
+      if (opcaoC.value.trim() !== '') {
+        const opcao = document.createElement('option');
+        opcao.value = opcaoC.value;
+        opcao.text = opcaoC.value;
+        opcoesSelect.appendChild(opcao);
+      }
+
+      if (opcaoD.value.trim() !== '') {
+        const opcao = document.createElement('option');
+        opcao.value = opcaoD.value;
+        opcao.text = opcaoD.value;
+        opcoesSelect.appendChild(opcao);
+      }
+    }
+
+    opcaoA.addEventListener('input', atualizarOpcoesSelect);
+    opcaoB.addEventListener('input', atualizarOpcoesSelect);
+    opcaoC.addEventListener('input', atualizarOpcoesSelect);
+    opcaoD.addEventListener('input', atualizarOpcoesSelect);
+
+  </script>
+</body>
+
+</html>
